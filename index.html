@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda Pal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="panda-info-section">
+            <h1 id="pandaNameDisplay" class="panda-name">No Name</h1>
+        </div>
+
+        <div class="progress-section">
+            <div class="progress-bar-wrapper">
+                <span class="label">Hungry Level</span>
+                <div class="progress-bar hungry-level-bar">
+                    <div class="progress-fill" id="hungryFill"></div>
+                </div>
+            </div>
+            <div class="progress-bar-wrapper">
+                <span class="label">Health Level</span>
+                <div class="progress-bar health-level-bar">
+                    <div class="progress-fill" id="healthFill"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panda-image-section">
+            <img id="pandaGif" src="assets/panda_idle.gif" alt="Panda GIF">
+        </div>
+
+        <div class="controls-section">
+            <button id="feedMeButton" class="feed-button">FEED ME !</button>
+            <div class="name-change-group">
+                <input type="text" id="nameInput" class="name-input" placeholder="New Panda Name">
+                <button id="changeNameButton" class="change-name-button">Change Name</button>
+            </div>
+        </div>
+        <div class="game-over-message">GAME OVER</div>
+    </div>
+    <script src="https://unpkg.com/xstate@4/dist/xstate.js"></script>
+    <script src="https://unpkg.com/rxjs@7/dist/bundles/rxjs.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
